@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Cherry+Bomb+One&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cherry Bomb One", cursive;
+  
+  --color-pastel-pink: #FFD1DC;
+  --color-pastel-blue: #B2E2F2;
+  --color-pastel-green: #C1E1C1;
+  --color-pastel-yellow: #FDFD96;
+  --color-pastel-purple: #E0BBE4;
+  --color-pastel-orange: #FFDAB9;
+}
+
+body {
+  background-color: #FFF5F7;
+  color: #4A4A4A;
+  background-image: radial-gradient(#FFD1DC 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.funky-border {
+  border: 3px solid #4A4A4A;
+  box-shadow: 4px 4px 0px #4A4A4A;
+}
+
+.funky-button {
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.funky-button:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0px #4A4A4A;
+}
+
+.funky-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #4A4A4A;
+}
+
+.sprinkle {
+  position: absolute;
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #FFF5F7;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #FFD1DC;
+  border-radius: 10px;
+  border: 2px solid #FFF5F7;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #FFB7CE;
+}
